@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: Lato;
+    background-color: rgb(236, 228, 244);
+}
+
+/* fonts */
+
+@font-face {
+    src: url(../fonts/lato.ttf);
+    font-family: lato;
+}
+
+@font-face {
+    src: url(../fonts/roboto.ttf);
+    font-family: roboto;
+}
+
+@font-face {
+    src: url(../fonts/sourcesans.ttf);
+    font-family: sourcesans;
+}
+
+/* sign */
+
+.sign {
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 130px auto;
+    gap: 15px;
+    padding: 15px;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 32px;
+    background-color: white;
+}
+
+h2 {
+    background-color: white;
+    font-size: 17px;
+    color: #9096B2;
+    font-weight: 400;
+}
+a, a:focus, a:hover, a:active {
+    background-color: white;
+    text-decoration: none;
+    color: #9096B2;
+    font-size: 17px;
+    padding: 5px;
+}
+
+a:hover {
+    background-color: white;
+    text-decoration: underline;
+}
+
+label, .remember {
+    background-color: white;
+}
+
+.logIn {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.email-wrapper, .password-wrapper {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+#email-id, #password-id {
+    background-color: white;
+    width: 300px;
+    height: 40px;
+}
+
+.sign-button {
+    width: 300px;
+    height: 30px;
+    background-color: rgb(236, 228, 244);
+    color: black;
+    border-color: rgb(236, 228, 244);
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+   .sign {
+    width: 300px;
+   }
+
+   #email-id, #password-id, .sign-button {
+    width: 250px;
+   }
+}

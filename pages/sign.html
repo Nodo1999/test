@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Travel Website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Gdzelishvili Nodo">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/Sign.css">
+    <script src="../JS/Sign.js"></script>
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="bg"> </div>
+    <div class="sign">
+        <h1> Sign Up </h1>
+        <form class="SignUp" action="#" method="get" onsubmit="submitHandler()">
+            <div class="name">
+                <div class="fname-wrapper">
+                    <label> Enter Your First Name: </label>
+                    <input type="text" name="fname" id="fname-id" placeholder="First Name*" required>
+                </div>
+                <div class="lname-wrapper">
+                    <label> Enter Your Last Name: </label>
+                    <input type="text" name="lname" id="lname-id" placeholder="Last Name*" required>
+                </div>
+            </div>
+            <div class="email-wrapper">
+                <label> Enter Your Email Address: </label>
+                <input type="text" name="email" id="email-id" placeholder="Email*" required>
+            </div>
+            <div class="country-wrapper">
+                <label> Choose Your Country: </label>
+                <select name="country" id="country-id">
+                    <option Value="Georgia"> Georgia </option>
+                    <option Value="Ukraine"> Ukraine </option>
+                    <option Value="Other"> Other </option>
+                </select>
+            </div>
+            <div class="number-wrapper">
+                <label> Enter Your Phone Number: </label>
+                <div class="number">
+                    <input type="text" name="number" id="phoneNumber-id" placeholder="+995" maxlength="4">
+                    <input type="text" name="number" id="number-id" placeholder="### ### ###" maxlength="11">
+                </div>
+            </div>
+            <div class="password-wrapper">
+                <label> Enter Your Password: </label>
+                <input type="password" name="password" id="password-id" placeholder="Password*" minlength="5" required>
+            </div>
+            <div class="cpassword-wrapper">
+                <label> Confirm Your Password: </label>
+                <input type="password" name="cPassword" id="cPassword-id" placeholder="Confirm Password*" minlength="5" required>
+            </div>
+            <div class="term">
+                <input type="checkbox" name="Box" id="box-id" value="terms" required>
+                <label> <a href="#"> Accept Terms And Conditions </a> </label>
+            </div>
+            <input type="submit" class="sign-button" value="Sign Up">
+        </form>
+    </div>
+</body>
+</html>

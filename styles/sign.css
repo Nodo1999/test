@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: Lato;
+    background-color: rgb(236, 228, 244);
+}
+
+/* fonts */
+
+@font-face {
+    src: url(../fonts/lato.ttf);
+    font-family: lato;
+}
+
+@font-face {
+    src: url(../fonts/roboto.ttf);
+    font-family: roboto;
+}
+
+@font-face {
+    src: url(../fonts/sourcesans.ttf);
+    font-family: sourcesans;
+}
+
+/*sign*/
+
+.sign {
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    border-radius: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 30px auto;
+    gap: 15px;
+    padding: 15px;
+}
+
+h1 {
+    background-color: white;
+    font-size: 32px;
+}
+
+a, a:focus, a:hover, a:active {
+    background-color: white;
+    text-decoration: none;
+    color: #9096B2;
+    font-size: 17px;
+    padding: 5px;
+}
+
+a:hover {
+    background-color: white;
+    text-decoration: underline;
+}
+
+.SignUp {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.fname-wrapper, .lname-wrapper, .email-wrapper, 
+.country-wrapper, .number-wrapper, .password-wrapper, .cpassword-wrapper {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+
+#fname-id, #lname-id {
+    background-color: white;
+    width: 150px;
+    height: 40px;
+}
+
+#email-id, #password-id, #country-id, #password-id, #cPassword-id {
+    background-color: white;
+    width: 350px;
+    height: 40px;
+}
+
+#phoneNumber-id {
+    background-color: white;
+    width: 80px;
+    height: 40px;
+}
+
+#number-id {
+    background-color: white;
+    width: 270px;
+    height: 40px;
+}
+
+.sign-button {
+    width: 350px;
+    height: 30px;
+    background-color: rgb(236, 228, 244);
+    color: black;
+    border-color: rgb(236, 228, 244);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.name, .number .term {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+}
+
+label, .term, .number {
+    background-color: white;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .sign {
+     width: 300px;
+     height: 700px;
+    }
+
+    #fname-id, #lname-id {
+        width: 130px;
+    }
+    
+    #email-id, #password-id, #country-id, #password-id, #cPassword-id {
+        width: 280px;
+    }
+    
+    #phoneNumber-id {
+        width: 70px;
+    }
+    
+    #number-id {
+        width: 200px;
+    }
+    
+    .sign-button {
+        width: 280px;
+    }
+
+    .name {
+        gap: 20px;
+    }
+}

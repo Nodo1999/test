@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Travel Website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Gdzelishvili Nodo">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/cf619a103a.js" crossorigin="anonymous"></script>
+    <script src="./js/Index.js"></script>
+    <title>NG Travel</title>
+</head>
+<body>
+  <div class="section-1" id="Header">
+    <header class="bgc">
+      <div class="wrapper">
+        <div class="logo">
+          <a href="./index.html">
+            <img id="logo" src="assets/logo.png" alt="No Photo">
+          </a>                   
+        </div>
+        <nav>              
+          <a href="./index.html">Home</a>   
+          <a href="./pages/popular.html">popular</a>           
+          <a href="./pages/gallery.html">tours</a>                        
+          <a href="./pages/blog.html">blog</a>                                             
+          <a href="#section-2">about</a>                     
+          <a href="#contact-section">contact</a> 
+        </nav>
+        <div class="burger-menu" onclick="clickHandler()">
+          <div class="block-bar1"> </div>
+          <div class="block-bar2"> </div>
+          <div class="block-bar3"> </div>
+        </div>
+        <div class="login" id="login">
+          <i class="fas fa-sign-in-alt" aria-hidden="true"></i>
+          <a href=".//pages/log.html">Log-in</a>
+        </div>
+      </div>
+    </header>
+    <div class="main-title">
+      <h1>TRAVEL</h1>
+      <h2 class="big-title">IT'S THE BEST INVESTMENT YOU CAN MAKE</h2>
+      <h2 class="slogan">We Are Helping People Make Memories</h2>
+      <div class="lets-go">
+        <a href="#offer-section">Collect Memories!</a>
+      </div>
+    </div>
+  </div>
+  <div class="section-2" id="section-2">
+    <div class="company-div">
+      <h3 class="our-company">Company Profile</h3>
+      <p class="about-text">NG traveling is the largest independently owned travel agency headquartered in Paris, and consistently ranked among the top 50 largest in the EU.</p>
+    </div>
+    <div class="mission-div">
+      <h3 class="our-mission">Our Mission Statement</h3>
+      <p class="about-text">We are an employee-owned company with a passion for providing exemplary customer service, leveraging our expertise and technology to deliver innovative travel solutions in a gratifying work environment.</p>
+    </div>
+  </div>
+  <section class="section-3">
+    <div class="photo">
+      <div class="block">
+        <div class="block-1">
+          <div>
+            <i class="fa-solid fa-face-smile"></i>
+          </div>
+          <h4>Happy Travelers</h4>
+          <p>1000000</p>
+        </div>
+        <div class="block-1">
+          <div>
+            <i class="fa-solid fa-people-roof"></i>
+          </div>
+          <h4>Employees</h4>
+          <p>100</p>
+        </div>
+        <div class="block-1">
+          <div>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <h4>Countries Visited</h4>
+          <p>50</p>
+        </div>
+        <div class="block-1">
+          <div>
+            <i class="fa-solid fa-mountain-city"></i>
+          </div>
+          <h4>Cities Visited</h4>
+          <p>500</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="offer-section" id="offer-section">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="spec-offer">
+            <div class="offer-1">
+                <div> </div>
+                <a href="#"> Egypt & Jordan Combo Tour </a>
+                <p class="discount"> 10% off our 16-day combo tour </p>
+                <p> Take in the highlights of Egypt and Jordan including the Pyramids and Petra with 10% off selected departures of our 16-day Road to Jordan group tour. There's also 10% off our Festive Road to Jordan Christmas departure of this tour!
+                    Or explore Jordan on its own with 10% off selected departures of our 6-day Passage to Petra and 8-day Totally Jordan tours.
+                    <br> <br> Offer ends 30 June 2022.</p>
+            </div>
+            <div class="offer-2">
+                <div> </div>
+                <a href="#"> Vietnam & Cambodia Tour </a>
+                <p class="discount"> Save up to 15% on Southeast Asia </p>
+                <p> After what feels like forever, Vietnamese borders are open! Celebrate with 15% off our 9-day Saigon to Siem Reap group tour and 10% off 10-day Very Vietnam.
+                    Explore neighbouring Cambodia with 10% off our 6-day Classic Cambodia, or combine the two with 10% off 15-day Journey to Angkor Wat.
+                    <br> <br> Offer ends 21 July 2022. </p>
+            </div>
+            <div class="offer-3">
+                <div> </div>
+                <a href="#"> Iceland Northern Lights Tour </a>
+                <p class="discount"> 10% off Iceland </p>
+                <p> Take in Iceland's Northern Lights and natural wonders in winter with 10% off all 2022 departures of our most popular 5-day Land of the Northern Lights tour, which includes a dedicated Northern Lights programme to help boost your chances of seeing this iconic natural phenomenon.
+                    <br> <br> Offer ends 25 August 2022. </p>
+            </div>
+          </div>
+            <div class="slider-div">
+                <h5 class="text"> Special Offers This Summer</h5>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="spec-offer">
+                <div class="offer-2">
+                    <div> </div>
+                    <a href="#"> Vietnam & Cambodia Tour </a>
+                    <p class="discount"> Save up to 15% on Southeast Asia </p>
+                    <p> After what feels like forever, Vietnamese borders are open! Celebrate with 15% off our 9-day Saigon to Siem Reap group tour and 10% off 10-day Very Vietnam.
+                        Explore neighbouring Cambodia with 10% off our 6-day Classic Cambodia, or combine the two with 10% off 15-day Journey to Angkor Wat.
+                        <br> <br> Offer ends 21 July 2022. </p>
+                </div>
+                <div class="offer-3">
+                    <div> </div>
+                    <a href="#"> Iceland Northern Lights Tour </a>
+                    <p class="discount"> 10% off Iceland </p>
+                    <p> Take in Iceland's Northern Lights and natural wonders in winter with 10% off all 2022 departures of our most popular 5-day Land of the Northern Lights tour, which includes a dedicated Northern Lights programme to help boost your chances of seeing this iconic natural phenomenon.
+                        <br> <br> Offer ends 25 August 2022. </p>
+                </div>
+                <div class="offer-1">
+                    <div> </div>
+                    <a href="#"> Egypt & Jordan Combo Tour </a>
+                    <p class="discount"> 10% off our 16-day combo tour </p>
+                    <p> Take in the highlights of Egypt and Jordan including the Pyramids and Petra with 10% off selected departures of our 16-day Road to Jordan group tour. There's also 10% off our Festive Road to Jordan Christmas departure of this tour!
+                        Or explore Jordan on its own with 10% off selected departures of our 6-day Passage to Petra and 8-day Totally Jordan tours.
+                        <br> <br> Offer ends 30 June 2022.</p>
+                </div>
+            </div>
+            <div class="slider-div">
+                <h5 class="text"> Special Offers This Summer </h5>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="spec-offer">
+                <div class="offer-3">
+                    <div> </div>
+                    <a href="#"> Iceland Northern Lights Tour </a>
+                    <p class="discount"> 10% off Iceland </p>
+                    <p> Take in Iceland's Northern Lights and natural wonders in winter with 10% off all 2022 departures of our most popular 5-day Land of the Northern Lights tour, which includes a dedicated Northern Lights programme to help boost your chances of seeing this iconic natural phenomenon.
+                        <br> <br> Offer ends 25 August 2022. </p>
+                </div>
+                <div class="offer-1">
+                    <div> </div>
+                    <a href="#"> Egypt & Jordan Combo Tour </a>
+                    <p class="discount"> 10% off our 16-day combo tour </p>
+                    <p> Take in the highlights of Egypt and Jordan including the Pyramids and Petra with 10% off selected departures of our 16-day Road to Jordan group tour. There's also 10% off our Festive Road to Jordan Christmas departure of this tour!
+                        Or explore Jordan on its own with 10% off selected departures of our 6-day Passage to Petra and 8-day Totally Jordan tours.
+                        <br> <br> Offer ends 30 June 2022.</p>
+                </div>
+                <div class="offer-2">
+                    <div> </div>
+                    <a href="#"> Vietnam & Cambodia Tour </a>
+                    <p class="discount"> Save up to 15% on Southeast Asia </p>
+                    <p> After what feels like forever, Vietnamese borders are open! Celebrate with 15% off our 9-day Saigon to Siem Reap group tour and 10% off 10-day Very Vietnam.
+                        Explore neighbouring Cambodia with 10% off our 6-day Classic Cambodia, or combine the two with 10% off 15-day Journey to Angkor Wat.
+                        <br> <br> Offer ends 21 July 2022. </p>
+                </div>
+            </div>
+            <div class="slider-div">
+                <h5 class="text"> Special Offers This Summer </h5>    
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <a href="#offer-section"><span class="dot" onclick="currentSlide(1)"></span></a>
+        <a href="#offer-section"><span class="dot" onclick="currentSlide(2)"></span></a>
+        <a href="#offer-section"><span class="dot" onclick="currentSlide(3)"></span></a>
+    </div>
+    <script src="./js/Index.js"></script>
+</section>
+  <footer>
+    <div class="contact-section" id="contact-section">
+        <div class="contact-text">
+            <h5> Contact </h5>
+            <div class="contact-info">
+                <div>
+                    <a href="https://www.google.com/maps/place/%D0%A2%D0%B1%D0%B8%D0%BB%D0%B8%D1%81%D0%B8/@41.7326304,44.698767,11z/data=!3m1!4b1!4m5!3m4!1s0x40440cd7e64f626b:0x61d084ede2576ea3!8m2!3d41.7151377!4d44.827096" target="_blank"> <i class="fa-solid fa-location-dot"></i> </a>
+                    <p  class="inf">  Javakhishvili St, Tbilisi, Georgia </p>
+                </div>
+                <div>
+                    <a href="#"> <i class="fa-solid fa-phone"></i> </a>
+                    <p> +995 555 222 111 </p>
+                </div>
+                <div>
+                    <a href="https://www.google.com/intl/ru/gmail/about/" target="_blank"> <i class="fa-solid fa-envelope"></i> </a>
+                    <p  class="inf"> mail@gmail.com </p>
+                </div>
+            </div>
+        </div>
+        <div class="ask-text">
+            <h5> Ask Question </h5>
+            <form class="sendIn" action="#" method="post"  onsubmit="submitHandler()">
+                <input type="text" name="ask" id="ask-id" placeholder="Ask Question" required>
+                <input type="text" name="email" id="email-id" placeholder="Your Email" required>
+                <input type="submit" class="send-button" value="Send">
+            </form>
+        </div>
+    </div>
+    <div class="footer-section">
+        <div class="about">
+            <h6> About Us </h6>
+            <div> 
+                <a href="#"> Home </a>
+                <a href="#"> About Us </a>
+                <a href="#"> Work With Us </a>
+                <a href="#"> Terms Of Use </a>
+                <a href="#"> Privacy Policy </a>
+            </div>
+        </div>
+        <div class="travel">
+            <h6> Travel Tips </h6>
+            <div>
+                <a href="#"> Start Here </a>
+                <a href="#"> Popular </a>
+                <a href="#"> Blog </a>
+                <a href="#"> Destinations </a>
+                <a href="#"> Travel Insurance </a>
+            </div>
+        </div>
+        <div class="resource">
+            <h6> Resources </h6>
+            <div>
+                <a href="#"> Categories </a>
+                <a href="#"> City Guides </a>
+                <a href="#"> Travel Resources </a>
+            </div>
+        </div>
+        <div class="find">
+            <h6> Find Us Online </h6>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook-square"></i> </a>
+                <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram-square"></i> </a>
+                <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-twitter-square"></i> </a>
+                <a href="https://www.pinterest.com/" target="_blank"> <i class="fa-brands fa-pinterest-square"></i> </a>
+                <a href="https://www.youtube.com/" target="_blank"> <i class="fa-brands fa-youtube-square"></i> </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

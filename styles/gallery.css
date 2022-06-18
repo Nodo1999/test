@@ -1,0 +1,976 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: sourcesans;
+}
+
+/* fonts */
+
+@font-face {
+    src: url(../fonts/lato.ttf);
+    font-family: lato;
+}
+
+@font-face {
+    src: url(../fonts/roboto.ttf);
+    font-family: roboto;
+}
+
+@font-face {
+    src: url(../fonts/sourcesans.ttf);
+    font-family: sourcesans;
+}
+
+/* header */
+
+#logo {
+    width: 80px;
+    height: 30px;
+}
+
+.active {
+background-color: gold;
+}
+
+.bgc {
+    background: black;
+    padding: 10px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    z-index: 999;
+    display: block; 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    
+} 
+
+.wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+} 
+
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Concert One';
+    text-decoration: none;
+    color: bisque;
+    text-transform: uppercase;
+    padding: 10px 5px;
+    margin-left: 20px;
+    border-bottom: 3px solid transparent;
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+}
+
+.login i {
+    color: white;
+    font-size: 20px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+span {
+    font-size: 100px;
+}
+
+.login a {
+    color: white;
+    font-weight: 800;
+}
+
+.login {
+    background: blueviolet;
+    opacity: 0.8;
+    font-family: 'Concert One';
+    padding: 10px;
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    border-radius: 5px;
+}
+
+.login:hover {
+    background-color: black;
+    border: 1px solid white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* burger-menu */
+
+.burger-menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 40px;
+    position: relative;
+    left: calc(100%-35px);
+}
+
+.burger-menu div {
+    width: 35px;
+    height: 5px;
+    background-color:rgb(236, 228, 244);
+    margin: 3px 20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.modify .block-bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        -ms-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.modify .block-bar3 {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+.modify .block-bar2 {
+    display: none;
+}
+
+/* section */
+
+section {
+    padding-top: 50px;
+}
+
+.gallery {
+    margin: 30px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 3px solid palevioletred;
+    border-radius: 10px;
+    gap: 30px;
+}
+
+h1 {
+    font-size: 48px;
+
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.country {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 2px solid peachpuff;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.country1 {
+    padding-right: 10px;
+}
+
+.country1 img {
+    width: 200px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.cities {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+
+.uk-photo, .italy-photo, .france-photo, .austria-photo, .spain-photo, .portugal-photo, .georgia-photo, .switzerland-photo, .iceland-photo, .czechrepublic-photo, .japan-photo, .turkey-photo, .malaysia-photo, .india-photo, .china-photo, .nepal-photo, .singapore-photo, .maldives-photo, .southafrica-photo, .morocco-photo, .ethiopia-photo, .seychelles-photo, .madagascar-photo, .egypt-photo, .tanzania-photo, .sainthelena-photo, .canada-photo, .mexico-photo, .usa-photo, .jamaica-photo, .cuba-photo, .panama-photo, .dominica-photo, .saintlucia-photo, .argentina-photo, .colombia-photo, .brazil-photo, .chile-photo, .peru-photo, .uruguay-photo, .ecuador-photo, .bolivia-photo
+{
+    width: 200px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.city a {
+    text-decoration:none;
+    color: white;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 24px;
+    background-color: black;
+}
+
+.uk-photo {
+    background-image: url(../assets/gallery/europe/uk.jpg);
+}
+
+.uk-photo p, .italy-photo p, .france-photo p, .austria-photo p, .spain-photo p, .portugal-photo p, .georgia-photo p, .switzerland-photo p, .iceland-photo p, .czechrepublic-photo p, .japan-photo p, .turkey-photo p, .malaysia-photo p, .india-photo p, .china-photo p, .nepal-photo p, .singapore-photo p, .maldives-photo p, .southafrica-photo p, .morocco-photo p, .ethiopia-photo p, .seychelles-photo p, .madagascar-photo p, .egypt-photo p, .tanzania-photo p, .sainthelena-photo p, .canada-photo p, .mexico-photo p, .usa-photo p, .jamaica-photo p, .cuba-photo p, .panama-photo p, .dominica-photo p, .saintlucia-photo p, .argentina-photo p, .colombia-photo p, .brazil-photo p, .chile-photo p, .peru-photo p, .uruguay-photo p, .ecuador-photo p, .bolivia-photo p {
+    padding-top: 70px;
+    opacity: 0;
+}
+
+.uk-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/europe/uk.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/uk.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/uk.jpg);
+    background-position: center;
+    background-size: cover;
+}
+ 
+.italy-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/europe/italy.png);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/italy.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/italy.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.france-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/europe/france.webp);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/france.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/france.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.austria-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/europe/austria.webp);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/austria.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/austria.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.spain-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/europe/spain.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/spain.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/spain.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.portugal-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/europe/portugal.webp);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/portugal.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/portugal.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.georgia-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/europe/georgia.webp);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/georgia.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/georgia.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.switzerland-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/europe/switzerland.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/switzerland.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/switzerland.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.iceland-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/europe/iceland.webp);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/iceland.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/iceland.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.czechrepublic-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/europe/czechrepublic.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/czechrepublic.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/europe/czechrepublic.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.japan-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/asia/japan.webp);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/asia/japan.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/asia/japan.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.turkey-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/asia/turkey.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/asia/turkey.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/asia/turkey.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.malaysia-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/asia/malaysia.webp);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/asia/malaysia.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/asia/malaysia.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.india-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/asia/india.webp);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/asia/india.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/asia/india.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.china-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/asia/china.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/asia/china.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/asia/china.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.nepal-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/asia/nepal.webp);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/asia/nepal.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/asia/nepal.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.singapore-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/asia/singapore.webp);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/asia/singapore.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/asia/singapore.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.maldives-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/asia/maldives.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/asia/maldives.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/asia/maldives.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.southafrica-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/africa/southafrica.webp);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/africa/southafrica.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/africa/southafrica.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.morocco-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/africa/morocco.webp);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/africa/morocco.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/africa/morocco.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.ethiopia-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/africa/ethiopia.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/africa/ethiopia.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/africa/ethiopia.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.seychelles-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/africa/seychelles.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/africa/seychelles.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/africa/seychelles.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.madagascar-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/africa/madagascar.webp);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/africa/madagascar.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/africa/madagascar.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.egypt-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/africa/egypt.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/africa/egypt.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/africa/egypt.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.tanzania-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/africa/tanzania.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/africa/tanzania.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/africa/tanzania.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sainthelena-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/africa/sainthelena.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/africa/sainthelena.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/africa/sainthelena.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.canada-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/northamerica/canada.webp);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/northamerica/canada.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/northamerica/canada.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.mexico-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/northamerica/mexico.webp);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/northamerica/mexico.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/northamerica/mexico.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.usa-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/northamerica/usa.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/northamerica/usa.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/northamerica/usa.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.jamaica-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/northamerica/jamaica.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/northamerica/jamaica.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/northamerica/jamaica.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cuba-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/northamerica/cuba.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/northamerica/cuba.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/northamerica/cuba.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.panama-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/northamerica/panama.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/northamerica/panama.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/northamerica/panama.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.dominica-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/northamerica/dominica.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/northamerica/dominica.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/northamerica/dominica.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.saintlucia-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/northamerica/saintlucia.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/northamerica/saintlucia.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/northamerica/saintlucia.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.argentina-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/southamerica/argentina.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/southamerica/argentina.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/southamerica/argentina.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.colombia-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/southamerica/colombia.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/southamerica/colombia.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/southamerica/colombia.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.brazil-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/southamerica/brazil.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/southamerica/brazil.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/southamerica/brazil.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.chile-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/southamerica/chile.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/southamerica/chile.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/southamerica/chile.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.peru-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/southamerica/peru.webp);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/southamerica/peru.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/southamerica/peru.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.uruguay-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/southamerica/uruguay.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/southamerica/uruguay.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/southamerica/uruguay.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.ecuador-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/southamerica/ecuador.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/southamerica/ecuador.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/southamerica/ecuador.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bolivia-photo:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.700)), to(rgba(0, 0, 0, 0.700))),  url(../assets/gallery/southamerica/bolivia.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/southamerica/bolivia.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)),  url(../assets/gallery/southamerica/bolivia.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.uk-photo:hover p, .italy-photo:hover p, .france-photo:hover p, .austria-photo:hover p, .spain-photo:hover p, .portugal-photo:hover p, .georgia-photo:hover p, .switzerland-photo:hover p, .iceland-photo:hover p, .czechrepublic-photo:hover p, .japan-photo:hover p, .turkey-photo:hover p, .malaysia-photo:hover p, .india-photo:hover p, .china-photo:hover p, .nepal-photo:hover p, .singapore-photo:hover p, .maldives-photo:hover p, .southafrica-photo:hover p, .morocco-photo:hover p, .ethiopia-photo:hover p, .seychelles-photo:hover p, .madagascar-photo:hover p, .egypt-photo:hover p, .tanzania-photo:hover p, .sainthelena-photo:hover p, .canada-photo:hover p, .mexico-photo:hover p, .usa-photo:hover p, .jamaica-photo:hover p, .cuba-photo:hover p, .panama-photo:hover p, .dominica-photo:hover p, .saintlucia-photo:hover p, .argentina-photo:hover p, .colombia-photo:hover p, .brazil-photo:hover p, .chile-photo:hover p, .peru-photo:hover p, .uruguay-photo:hover p, .ecuador-photo:hover p, .bolivia-photo:hover p {
+    opacity: 1;
+}
+
+.italy-photo {
+    background-image: url(../assets/gallery/europe/italy.png);
+}
+
+.france-photo {
+    background-image: url(../assets/gallery/europe/france.webp);
+}
+
+.austria-photo {
+    background-image: url(../assets/gallery/europe/austria.webp);
+}
+
+.spain-photo {
+    background-image: url(../assets/gallery/europe/spain.jpg);
+}
+
+.portugal-photo {
+    background-image: url(../assets/gallery/europe/portugal.webp);
+}
+
+.georgia-photo {
+    background-image: url(../assets/gallery/europe/georgia.webp);
+}
+
+.switzerland-photo {
+    background-image: url(../assets/gallery/europe/switzerland.jpg);
+}
+
+.iceland-photo {
+    background-image: url(../assets/gallery/europe/iceland.webp);
+}
+
+.czechrepublic-photo {
+    background-image: url(../assets/gallery/europe/czechrepublic.jpg);
+}
+
+.japan-photo {
+    background-image: url(../assets/gallery/asia/japan.webp);
+}
+
+.turkey-photo {
+    background-image: url(../assets/gallery/asia/turkey.jpg);
+}
+
+.malaysia-photo {
+    background-image: url(../assets/gallery/asia/malaysia.webp);
+}
+
+.india-photo {
+    background-image: url(../assets/gallery/asia/india.webp);
+}
+
+.china-photo {
+    background-image: url(../assets/gallery/asia/china.jpg);
+}
+
+.nepal-photo {
+    background-image: url(../assets/gallery/asia/nepal.webp);
+}
+
+.singapore-photo {
+    background-image: url(../assets/gallery/asia/singapore.webp);
+}
+
+.maldives-photo {
+    background-image: url(../assets/gallery/asia/maldives.jpg);
+}
+
+.southafrica-photo {
+    background-image: url(../assets/gallery/africa/southafrica.webp);
+}
+
+.morocco-photo {
+    background-image: url(../assets/gallery/africa/morocco.webp);
+} 
+
+.ethiopia-photo {
+    background-image: url(../assets/gallery/africa/ethiopia.jpg);
+} 
+
+.seychelles-photo {
+    background-image: url(../assets/gallery/africa/seychelles.jpg);
+} 
+
+.madagascar-photo {
+    background-image: url(../assets/gallery/africa/madagascar.webp);
+} 
+
+.egypt-photo {
+    background-image: url(../assets/gallery/africa/egypt.jpg);
+} 
+
+.tanzania-photo {
+    background-image: url(../assets/gallery/africa/tanzania.jpg);
+} 
+
+.sainthelena-photo {
+    background-image: url(../assets/gallery/africa/sainthelena.jpg);   
+}
+
+.canada-photo {
+    background-image: url(../assets/gallery/northamerica/canada.webp);
+}
+.mexico-photo {
+    background-image: url(../assets/gallery/northamerica/mexico.webp);
+} 
+
+.usa-photo {
+    background-image: url(../assets/gallery/northamerica/usa.jpg);
+} 
+
+.jamaica-photo {
+    background-image: url(../assets/gallery/northamerica/jamaica.jpg);
+} 
+
+.cuba-photo {
+    background-image: url(../assets/gallery/northamerica/cuba.jpg);
+} 
+
+.panama-photo {
+    background-image: url(../assets/gallery/northamerica/panama.jpg);
+} 
+
+.dominica-photo {
+    background-image: url(../assets/gallery/northamerica/dominica.jpg);
+} 
+
+.saintlucia-photo {
+    background-image: url(../assets/gallery/northamerica/saintlucia.jpg);
+}
+
+.argentina-photo {
+    background-image: url(../assets/gallery/southamerica/argentina.jpg);
+} 
+
+.colombia-photo {
+    background-image: url(../assets/gallery/southamerica/colombia.jpg);
+} 
+
+.brazil-photo {
+    background-image: url(../assets/gallery/southamerica/brazil.jpg);
+} 
+
+.chile-photo {
+    background-image: url(../assets/gallery/southamerica/chile.jpg);
+} 
+
+.peru-photo {
+    background-image: url(../assets/gallery/southamerica/peru.webp);
+} 
+
+.uruguay-photo {
+    background-image: url(../assets/gallery/southamerica/uruguay.jpg);
+} 
+
+.ecuador-photo {
+    background-image: url(../assets/gallery/southamerica/ecuador.jpg);
+} 
+
+.bolivia-photo {
+    background-image: url(../assets/gallery/southamerica/bolivia.jpg);
+}
+
+/* footer */
+
+.footer-section {
+    width: 100%;
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 15px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+.about, .travel, .resource, .find {
+    gap: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: violet;
+
+}
+
+.find div i {
+    font-size: 24px;
+    padding: 5px;
+    color: violet;
+}
+.about div, .travel div, .resource div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+    font-size: 18px;
+}
+
+.find div i:hover {
+    color: white;
+    -webkit-transform: scale(2,2);
+        -ms-transform: scale(2,2);
+            transform: scale(2,2);
+}
+
+
+.about div a, .travel div a, .resource div a, .find div a {
+    color: bisque;
+}
+
+.about div a:hover, .travel div a:hover, .resource div a:hover, .find div a:hover {
+    color: white;
+}
+
+/* responsive */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    nav {
+        display: none;
+    }
+
+    .burger-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: absolute;
+        top: 10px;
+        left: 5px;
+    }
+
+    .change {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index:-1;
+        top: 0;
+        right: 0;
+        background-color: black;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+    .change a {
+        text-align: center;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+    .about, .travel, .resource {
+        margin-top: 20px;
+    }
+    .wrapper {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        padding: 0;
+    }
+    .login {
+        width: 90px;
+        position: absolute;
+        right: 15px;
+    }
+    header {
+        padding: 0px;
+    }
+    .country {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .burger-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: absolute;
+        top: 10px;
+    }
+
+    .change {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index:-1;
+        top: 0;
+        right: 0;
+        background-color:black;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+    .change a {
+        text-align: center;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+}
